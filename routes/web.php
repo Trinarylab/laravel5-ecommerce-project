@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('web.index');
+});
+
+Route::get('products', function () {
+    return view('web.product-list');
+});
+
+Route::get('product-detail', function () {
+    return view('web.product-detail');
+});
+
+Route::get('checkout',function (){
+    return view('web.checkout');
 });
